@@ -187,4 +187,100 @@ html {
     height: 200px;
     border-radius: 50%;
   }
+
+  .dark-container {
+      background: darkblue;
+      width: 300px;
+      height: 500px;
+  }
+  .star1,
+  .star2,
+  .star3,
+  .star4, 
+  .star5,
+  .star6,
+  .star7,
+  .star8 {
+      height: 8px;
+      width: 8px;
+      border-radius: 3px;
+      background: white;
+  }
+
+  .star1 {
+      position: relative;
+      top: 205px;
+      left: 235px;
+      animation: star1animation 1.1s infinite alternate;
+  }
+
+  .star2 {
+    position: relative;
+    top: 350px;
+    left: 170px;
+    animation: star1animation 0.75s infinite alternate;
+}
+
+.star3 {
+    position: relative;
+    top: 35px;
+    left: 115px;
+    animation: star1animation .8s infinite alternate;
+}
+
+.star4 {
+    position: relative;
+    top: 195px;
+    left: 95px;
+    animation: star1animation .6s infinite alternate;
+}
+
+.star5 {
+    position: relative;
+    top: 375px;
+    left: 75px;
+    animation: star1animation 1.1s infinite alternate;
+}
+
+.star6 {
+  position: relative;
+  top: 32px;
+  left: 217px;
+  animation: star1animation 0.75s infinite alternate;
+}
+
+.star7 {
+  position: relative;
+  top: 179px;
+  left: 155px;
+  animation: star1animation .8s infinite alternate;
+}
+
+.star8 {
+  position: relative;
+  top: 405px;
+  left: 211px;
+  animation: star1animation .6s infinite alternate;
+}
+
+@keyframes star1animation {
+    0%{
+        transform: scale(1) rotate(90deg) translate(50, 20);
+    }
+    25% {
+        transform: scale(.1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1) rotate(90deg) translate(50, 20);
+    }
+    75% {
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1) rotate(90deg) translate(-50, -20);
+    }
+}
+  
   
