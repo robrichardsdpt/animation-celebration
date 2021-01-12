@@ -298,7 +298,7 @@ html {
   margin: auto;
   position: relative;
   transition: all 0.5s ease-in-out;
-  animation: cubeRotation 3s infinite;
+  animation: cubeRotation 3s linear infinite;
 }
 
 .side {
@@ -307,7 +307,7 @@ html {
   border-radius: 50%;
   border: 2px black solid;
   position: absolute;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s linear;
   float: left;
   overflow: hidden;
   opacity: 0.85;
