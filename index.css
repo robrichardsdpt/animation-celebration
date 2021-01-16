@@ -402,9 +402,11 @@ html {
     filter: grayscale(1);
     border-radius: 100%;
     transform: scale(.1);
+    opacity: 0.1;
   }
   100% {
     filter: grayscale(1);
+    box-shadow: 25px 25px 25px silver;
   }
 
 }
