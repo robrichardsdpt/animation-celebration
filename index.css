@@ -396,5 +396,14 @@ html {
   justify-content: center;
 }
 .image {
-  animation: roll 5s linear infinite;
+}
+@keyframes desaturate {
+  50% {
+    filter: grayscale(1);
+    border-radius: 100%
+  }
+  100% {
+    filter: grayscale(1)
+  }
+
 }

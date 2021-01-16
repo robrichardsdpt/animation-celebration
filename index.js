@@ -7,3 +7,8 @@ document.querySelector("#cube").addEventListener('click',function ()
  }
 }  )
 
+
+document.querySelector(".image").addEventListener('click',function ()
+{
+  (document.querySelector(".image").style.animation = "desaturate 4s linear forwards")
+}  )
