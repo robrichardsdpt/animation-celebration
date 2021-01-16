@@ -410,3 +410,33 @@ html {
   }
 
 }
+
+#image-cube {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  margin: auto;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  animation: imageCubeRotation 12s linear 3;
+}
+.image-side {
+  border-radius: 50%;
+  border: 2px black solid;
+  position: absolute;
+  transition: all 0.5s linear;
+  float: left;
+  overflow: hidden;
+  opacity: 0.85;
+}
+
+@keyframes imageCubeRotation {
+  0% {  
+    transform: rotateY(0deg);   
+  }
+  50% { 
+    transform: rotateY(-238deg);  
+  }
+  100% {    
+    transform: rotateY(-360deg);  
+  }
+}
