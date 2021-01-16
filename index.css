@@ -395,3 +395,6 @@ html {
   display: flex;
   justify-content: center;
 }
+.image {
+  animation: roll 5s linear infinite;
+}
