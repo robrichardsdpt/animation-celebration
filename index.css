@@ -400,10 +400,11 @@ html {
 @keyframes desaturate {
   50% {
     filter: grayscale(1);
-    border-radius: 100%
+    border-radius: 100%;
+    transform: scale(.1);
   }
   100% {
-    filter: grayscale(1)
+    filter: grayscale(1);
   }
 
 }
