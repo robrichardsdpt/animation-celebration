@@ -168,6 +168,7 @@ html {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    display: none;
   }
   
   .grass {
@@ -175,6 +176,7 @@ html {
     height: 600px;
     width: 100%;
     position: absolute;
+    display: none;
   }
   
   .sun {
@@ -186,6 +188,7 @@ html {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    display: none;
   }
 
   .dark-container {
@@ -366,4 +369,29 @@ html {
   95% { 
     transform: translateY(-138px);  
   }
+}
+
+.newBall {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: radial-gradient(skyblue, steelblue);
+  border: 2px solid steelblue;
+  animation: roll 3s linear alternate infinite;
+}
+
+@keyframes roll {
+  25% {
+    transform: scale(.4) translate(200px);
+  }
+  50% {
+    transform: scale(.4) translate(350px);
+  }
+  75% {
+    transform: translateX(500px) scale(1);
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
