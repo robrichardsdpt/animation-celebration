@@ -372,23 +372,19 @@ html {
 }
 
 .newBall {
-  height: 125px;
-  width: 125px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
-  background: radial-gradient(skyblue, steelblue);
-  border: 2px solid steelblue;
-  animation: roll 3s linear alternate infinite;
+  background: radial-gradient(circle at 100px 100px, blue, black) ;
 }
 
 @keyframes roll {
-  25% {
-    transform: scale(.4) translate(200px);
-  }
+
   50% {
-    transform: scale(.4) translate(350px);
+    transform: rotateZ(180deg);
   }
   75% {
-    transform: translateX(500px) scale(1);
+    transform: rotateZ(360deg);
   }
 }
 .center {
