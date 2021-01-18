@@ -375,7 +375,8 @@ html {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle at 100px 100px, blue, black) ;
+  background: radial-gradient(circle at 100px 100px, blue, black);
+  box-shadow: 35px 35px 30px silver;
 }
 
 @keyframes roll {
