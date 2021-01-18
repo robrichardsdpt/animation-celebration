@@ -460,3 +460,10 @@ html {
     opacity: 0.5;
   }
 }
+
+#time {
+  position: relative;
+  top: -90px;
+  font-size: 2rem;
+  color: black;
+}
