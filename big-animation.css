@@ -8,12 +8,18 @@
   position: absolute;
   top: 100px;
   left: 100px;
-  animation: ball-animation 10s linear alternate infinite;
+  animation: ball-animation 4s linear alternate infinite;
 }
 
 @keyframes ball-animation {
+  25% {
+    transform: scale(1.5);
+  }
   50% {
     background: green;
+  }
+  75% {
+    transform: scale(0.5);
   }
   100% {
     background:blue;
