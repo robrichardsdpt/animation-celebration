@@ -5,8 +5,8 @@ document.body.onload = function() {
   const timer = setInterval(function () {
     const newDiv = document.createElement("div")
     newDiv.classList.add("ball")
-    newDiv.style.top = `${i*125}px`
-    newDiv.style.left = `${i*150}px`
+    newDiv.style.top = `${i*175}px`
+    newDiv.style.left = `${i*175}px`
     newDiv.style.zIndex = `${i}`
     const currentDiv = document.querySelector(".ball")
     i++
