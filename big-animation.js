@@ -1,3 +1,5 @@
+
+// preparing big animation
 document.body.onload = function() {
   let i = 1
   const timer = setInterval(function () {
