@@ -11,6 +11,25 @@ body{
   animation: ball-animation 4s linear alternate infinite;
 }
 
+.ball2 {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: rgba(255,0,0,1);
+  position: absolute;
+  animation: ball-animation-dance 4s linear alternate infinite;
+}
+
+.ball3 {
+  height: 250px;
+  width: 250px;
+  transform: scale(.1);
+  border-radius: 50%;
+  background: rgba(255,0,0,1);
+  position: absolute;
+  animation: ball-animation-jump 4s linear alternate infinite;
+}
+
 @keyframes ball-animation {
   25% {
     transform: scale(.5);
@@ -20,5 +39,31 @@ body{
   }
   100% {
     background:green;
+  }
+}
+
+@keyframes ball-animation-dance {
+  25% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: translateX(500px) scale(.5);
+    background: blue;
+  }
+  100%{
+    transform: scale(.1);
+  }
+}
+
+@keyframes ball-animation-jump {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: translateY(500px) scale(.5);
+    background: pink;
+  }
+  100%{
+    transform: scale(1);
   }
 }
