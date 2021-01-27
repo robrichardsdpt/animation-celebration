@@ -48,5 +48,6 @@ const changeClassTo1 = () => {
     i++
   }, 2000)
   setTimeout(function( ) { clearInterval( timer ) }, 12000)
+  setTimeout(function() { changeClass() }, 12000)
 }
 
