@@ -437,27 +437,36 @@ html {
   }
 }
 
-.image-container {
-  z-index: -15; 
+.image-div {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 9; 
 }
-.image-clickable {
+
+.image-div-movable {
   border-radius: 25%;
+  z-index: 10;
 }
 .image-text {
   position: relative;
   top: -200px;
-  left: 150px;
+  left: 350px;
   z-index: -1;
-  color:black;
+  color: black;
   font-size: 3rem;
 }
 
-.image-clickable:hover{
+.image-div-movable:hover{
+  cursor: grab;
   animation: turnToOpaque 2s linear forwards;
 }
+.image-div-movable:active{
+  cursor: grabbing;
+}
+
 @keyframes turnToOpaque {
   100% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
