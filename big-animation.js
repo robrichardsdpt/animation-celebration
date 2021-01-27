@@ -50,4 +50,3 @@ const changeClassTo1 = () => {
   setTimeout(function( ) { clearInterval( timer ) }, 12000)
   setTimeout(function() { changeClass() }, 12000)
 }
-

@@ -50,8 +50,11 @@ body{
     transform: translateX(500px) scale(.5);
     background: blue;
   }
+  75% {
+    transform: translateX(500px) translateY(500px);
+  }
   100%{
-    transform: scale(.1);
+    transform: translateX(0px) translateY(500px) scale(0);
   }
 }
 
