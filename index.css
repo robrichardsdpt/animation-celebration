@@ -438,7 +438,7 @@ html {
 }
 
 .image-container {
-  z-index: -15;
+  z-index: -15; 
 }
 .image-clickable {
   border-radius: 25%;
