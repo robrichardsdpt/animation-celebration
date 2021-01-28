@@ -1,0 +1,39 @@
+.ball {
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid navy;
+  display: absolute;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.hole-container {
+  width: 100vw;
+  display: absolute;
+}
+
+.hole {
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid gray;
+  display: absolute;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 75px;
+  left: 1200px;
+}
+
+#ball-0:hover {
+  background-color: green;
+}
+
+#ball-0:active {
+  background-color: red;
+}
