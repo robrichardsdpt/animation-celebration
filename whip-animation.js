@@ -56,6 +56,11 @@ function setTranslate(xPos, yPos, el) {
   if((yPos >=1300 && yPos <= 1560) && (xPos >= 0 && xPos <= 510)) {
    el.style.background = 'yellow'
    el.style.color = 'black'
+   el.style.border = 'black 2px solid'
+   el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0) scale(.85)"
+   for(let i = 1; i <= 5; i++) {
+     document.getElementById(`ball${i}`).style.background = 'green'
+   }
   } else {
     el.style.background='gray'
   }
