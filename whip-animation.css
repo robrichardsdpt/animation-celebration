@@ -1,4 +1,5 @@
-.ball {
+.ball,
+.move-ball {
   background-color: blue;
   height: 250px;
   width: 250px;
@@ -36,4 +37,14 @@
 
 #ball-0:active {
   background-color: red;
+}
+
+.animate-me {
+  animation: move-the-balls-please 4s linear forwards;
+}
+
+@keyframes move-the-balls-please {
+  100% {
+    transform: scale(0);
+  }
 }

@@ -58,10 +58,13 @@ function setTranslate(xPos, yPos, el) {
    el.style.color = 'black'
    el.style.border = 'black 2px solid'
    el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0) scale(.85)"
-   for(let i = 1; i <= 5; i++) {
-     document.getElementById(`ball${i}`).style.background = 'green'
-   }
-  } else {
+   let i = 1
+   const timer = setInterval(function () {
+     document.getElementById(`ball-${i}`).classList.add("animate-me")
+     i++
+   }, 2000)
+   setTimeout(function( ) { clearInterval( timer ) }, 8000)
+   } else {
     el.style.background='gray'
   }
 }

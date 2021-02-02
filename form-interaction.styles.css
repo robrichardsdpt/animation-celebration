@@ -1,0 +1,27 @@
+
+.ball {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: yellow;
+}
+
+@keyframes ballmovement {
+  0% {
+    transform: scale(.1);
+  }
+  25% {
+      transform: scale(1.0);
+    }
+    50% {
+      transform: translateX(500px) scale(.5);
+      background: blue;
+    }
+    75% {
+      transform: translateX(500px) translateY(500px);
+    }
+    100%{
+      transform: translateX(0px) translateY(500px) scale(0);
+    }
+  }

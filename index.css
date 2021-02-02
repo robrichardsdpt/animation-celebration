@@ -414,7 +414,7 @@ html {
   margin: auto;
   position: relative;
   transition: all 0.5s ease-in-out;
-  animation: imageCubeRotation 12s linear 3;
+  animation: imageCubeRotation 12s alternate 3;
 }
 .image-side {
   border-radius: 50%;
