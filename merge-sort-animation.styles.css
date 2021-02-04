@@ -1,7 +1,43 @@
-.ball {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background: rgba(255,0,0,1);
-  position: absolute;
+.block {
+  height: 100px;
+}
+#block0 {
+  background: blue;
+  width: 100px;
+}
+#block1 {
+  background: yellow;
+  width: 200px;
+}
+#block2 {
+  background: green;
+  width: 300px;
+}
+#block3 {
+  background: purple;
+  width: 400px;
+}
+#block4 {
+  background: cyan;
+  width: 500px;
+}
+#block5 {
+  background:maroon;
+  width: 600px;
+}
+#block6 {
+  background: red;
+  width: 700px;
+}
+#block7 {
+  background: gray;
+  width: 800px;
+}
+#block8 {
+  background: lavender;
+  width: 900px;
+}
+#block9 {
+  background: orange;
+  width: 1000px;
 }
