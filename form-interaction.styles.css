@@ -1,15 +1,23 @@
-
+.user-input {
+  padding: 5px;
+  font-size: 2rem;
+}
+.button {
+  font-size: 2rem;
+  padding: 5px;
+}
 .ball {
   height: 120px;
   width: 120px;
   border-radius: 50%;
   border: 2px solid black;
   background: yellow;
+  position: absolute;
 }
 
 @keyframes ballmovement {
   0% {
-    transform: scale(.1);
+    transform: scale(0);
   }
   25% {
       transform: scale(1.0);
@@ -23,5 +31,21 @@
     }
     100%{
       transform: translateX(0px) translateY(500px) scale(0);
+    }
+  }
+
+  @keyframes ballmovementjump {
+    0% {
+      transform: scale(0);
+    }
+    25% {
+      transform: scale(1);
+    }
+    50% {
+      transform: translateY(500px) scale(.5);
+      background: pink;
+    }
+    100%{
+      transform: scale(1);
     }
   }
