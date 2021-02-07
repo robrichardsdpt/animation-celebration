@@ -1,6 +1,6 @@
 let form = document.getElementById('user-input')
 
-let count = 0
+let count = 1
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
@@ -11,8 +11,9 @@ form.addEventListener('submit', (event) => {
         selectedValue = rb.value;
         const newDiv = document.createElement("div")
         newDiv.classList.add("ball")
-        newDiv.classList.add(`ball${count}`)
+        newDiv.id = `ball${count}`
         newDiv.classList.add(`${selectedValue}`)
+        newDiv.style.zIndex = `${count}`
         const currentDiv = document.querySelector(`.ball${count-1}`)
         document.body.insertBefore(newDiv, currentDiv)
         count++
