@@ -23,7 +23,7 @@
 }
 
 .vertical {
-  top: 1000px;
+  left: 500px;
   animation: vertical-animation 3s linear infinite alternate;
 }
 
@@ -72,17 +72,17 @@
     transform: translateY(0px) scale(0);
   }
   25% {
-    transform: translateY(250px) scale(1);
+    transform: translateY(200px) scale(1);
   }
   50% {
-    transform: translateY(500px) scale(1);
-    background: pink;
+    transform: translateY(400px) scale(1);
+    background: red;
   }
   75% {
-    transform: translateY(750px);
+    transform: translateY(600px);
   }
   100%{
-    transform: translateY(1000px) scale(0.1);
+    transform: translateY(800px) scale(0.1);
     background: yellow;
   }
 }
