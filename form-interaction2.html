@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form-interaction2.css">
+</head>
+<body>
+  <form id="user-input" name="user-input">
+    <p>Select a pattern for your animation:</p>
+    <div class="select">
+      <input type="radio" class="select" id="horizontal" name="animation" value="horizontal"
+              checked>
+      <label for="Horizontal">Horizontal</label>
+    </div>
+    <div class="select">
+      <input type="radio" class="select" id="diagonal-right" name="animation" value="diagonal-right">
+      <label for="diagonal-right">Diagonal Right</label>
+    </div>
+    <div class="select">
+      <input type="radio" class="select" id="diagonal-left" name="animation" value="diagonal-left">
+      <label for="diagonal-left">Diagonal Left</label>
+    </div>
+    <div class="select">
+      <input type="radio" class="select" id="vertical" name="animation" value="vertical">
+      <label for="vertical">Vertical</label>
+    </div>
+    <div class="select">
+      <input type="radio" class="select" id="spin" name="animation" value="spin">
+      <label for="spin">Spin</label>
+    </div>
+    <div class="select">
+      <input type="radio" class="select" id="zoom" name="animation" value="zoom">
+      <label for="zoom">Zoom</label>
+    </div>
+    <input class="button" type="submit" value="Bring on the animation!"/>
+  </form>
+  <div className="animation-container">
+  </div>
+  <script type="text/javascript" src="form-interaction2.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.select {
+  padding: 10px;
+  font-size: 2rem;
+  display:block
+}
+.button {
+  font-size: 2rem;
+  padding: 5px;
+  margin-top: 25px;
+}
+.ball {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: yellow;
+  position: absolute;
+}
+
+.horizontal {
+  top: 1000px;
+  animation: horizontal-animation 3s linear infinite alternate;
+}
+
+.vertical {
+  top: 1000px;
+  animation: vertical-animation 3s linear infinite alternate;
+}
+
+.diagonal-left{
+  top: 1000px;
+  animation: horizontal-animation 3s linear infinite;
+}
+
+.diagonal-right{
+  top: 1000px;
+  animation: horizontal-animation 3s linear infinite;
+}
+
+.zoom{
+  top: 1000px;
+  animation: horizontal-animation 3s linear infinite;
+}
+
+.spin{
+  top: 1000px;
+  animation: horizontal-animation 3s linear infinite alternate;
+}
+
+@keyframes horizontal-animation {
+  0% {
+    transform: translate(0px) scale(0);
+  }
+  25% {
+    transform: translate(250px) scale(1);
+  }
+  50% {
+    transform: translate(500px) scale(1);
+    background: blue;
+  }
+  75% {
+    transform: translate(750px);
+  }
+  100%{
+    transform: translate(1000px) scale(0.1);
+    background: yellow;
+  }
+}
+
+@keyframes vertical-animation {
+  0% {
+    transform: translateY(0px) scale(0);
+  }
+  25% {
+    transform: translateY(250px) scale(1);
+  }
+  50% {
+    transform: translateY(500px) scale(1);
+    background: pink;
+  }
+  75% {
+    transform: translateY(750px);
+  }
+  100%{
+    transform: translateY(1000px) scale(0.1);
+    background: yellow;
+  }
+}

@@ -40,7 +40,7 @@
 }
 
 .animate-me {
-  animation: move-the-balls-please 4s linear forwards;
+  animation: move-the-balls-please 2s linear forwards;
 }
 
 @keyframes move-the-balls-please {
