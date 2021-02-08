@@ -1,3 +1,8 @@
+body {
+  color: white;
+  background: black;
+}
+
 .select {
   padding: 10px;
   font-size: 2rem;
@@ -23,7 +28,7 @@
 }
 
 .vertical {
-  left: 500px;
+  left: 400px;
   animation: vertical-animation 3s linear infinite alternate;
 }
 
@@ -39,8 +44,9 @@
 }
 
 .zoom{
-  top: 1000px;
-  animation: horizontal-animation 3s linear infinite;
+  top: 900px;
+  left: 400px;
+  animation: zoom-animation 3s linear infinite;
 }
 
 .spin{
@@ -131,20 +137,40 @@
 
 @keyframes spin-animation {
   0% {
-    transform: rotateY(0deg) scale(0);
+    transform: rotateY(0deg);
   }
   25% {
-    transform: rotateY(90deg) scale(1);
+    transform: rotateY(90deg);
   }
   50% {
-    transform: rotateY(180deg) scale(1);
+    transform: rotateY(180deg);
     background: gold;
   }
   75% {
     transform: rotateY(270deg);
   }
   100%{
-    transform: rotateY(360deg) scale(0.1);
+    transform: rotateY(360deg);
+    background: silver;
+  }
+}
+
+@keyframes zoom-animation {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    background: orange;
+  }
+  75% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(.1);
     background: silver;
   }
 }
