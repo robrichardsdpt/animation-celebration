@@ -1,0 +1,40 @@
+html {
+  background: black;
+}
+.container-for-animation {
+  width: 2000px;
+  height: auto;
+  background-color: black;
+  position: relative;
+}
+
+
+.square {
+  height: 700px;
+  width: 225px;
+  background-color: red;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  opacity: 0.8;
+  animation: slide-in 3s linear forwards;
+  left: -225px;
+}
+.sink {
+  animation: sink-in 7s linear forwards;
+}
+
+@keyframes slide-in {
+  0%{
+    transform: translateX(0px) scale(0) rotateZ(90deg);
+  }
+  100% {
+    transform: translateX(225px);
+  }
+}
+
+@keyframes sink-in {
+  100% {
+    transform: scale(0);
+  }
+}
