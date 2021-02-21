@@ -1,11 +1,8 @@
-// We first check if the browser supports the Web Animations API
 if (document.body.animate) {
-  // If yes, we add a click listener on our button
-  document.querySelector('#image').addEventListener('click', pop);
+  document.querySelector('#image').addEventListener('click', clickPop);
 }
 
-// The pop() function is called on every click
-function pop(e) { 
+function clickPop(e) { 
   // Loop to generate 30 particles at once
   for (let i = 0; i < 30; i++) {
     // We pass the mouse coordinates to the createParticle() function
@@ -23,12 +20,11 @@ function createParticle (x, y) {
   // Apply the size on each particle
   particle.style.width = `${size}px`;
   particle.style.height = `${size}px`;
-  // Generate a random color in a blue/purple palette
-  particle.style.background = `hsl(${Math.random() * 90 + 180}, 70%, 60%)`;
+  // Generate a random color
+  particle.style.background = `hsl(${Math.random() * 360}, 70%, 60%)`;
   // Generate a random x & y destination within a distance of 75px from the mouse
   const destinationX = x + (Math.random() - 0.5) * 2 * 75;
   const destinationY = y + (Math.random() - 0.5) * 2 * 75;
-  
   // Store the animation in a variable because we will need it later
   const animation = particle.animate([
     {
