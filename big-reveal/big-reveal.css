@@ -1,72 +1,27 @@
-body{
-  background: black;
+#canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
-
-.ball {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background: rgba(255,0,0,1);
-  position: absolute;
-  animation: ball-animation 4s linear alternate infinite;
+h2 {
+  color: var(--fg);
+  position: relative;
+  font-size: 5vw;
+  line-height: 100vh;
+  margin: 0;
+  pointer-events: none;
+  z-index: 1;
 }
-
-.ball2 {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background: rgba(255,0,0,1);
-  position: absolute;
-  animation: ball-animation-dance 4s linear alternate infinite;
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
-.ball3 {
-  height: 250px;
-  width: 250px;
-  transform: scale(.1);
-  border-radius: 50%;
-  background: rgba(255,0,0,1);
-  position: absolute;
-  animation: ball-animation-jump 4s linear alternate infinite;
-}
-
-@keyframes ball-animation {
-  25% {
-    transform: scale(.5);
-  }
-  50% {
-    background: yellow;
-  }
-  100% {
-    background:green;
-  }
-}
-
-@keyframes ball-animation-dance {
-  25% {
-    transform: scale(.5);
-  }
-  50% {
-    transform: translateX(500px) scale(.5);
-    background: blue;
-  }
-  75% {
-    transform: translateX(500px) translateY(500px);
-  }
-  100%{
-    transform: translateX(0px) translateY(500px) scale(0);
-  }
-}
-
-@keyframes ball-animation-jump {
-  25% {
-    transform: scale(1);
-  }
-  50% {
-    transform: translateY(500px) scale(.5);
-    background: pink;
-  }
-  100%{
-    transform: scale(1);
-  }
+:root {
+  --fg: #ff4000;
+  --bg: #000057;
 }
