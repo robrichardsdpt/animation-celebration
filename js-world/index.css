@@ -1,43 +1,38 @@
-.block {
-  height: 100px;
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
 }
-#block0 {
-  background: blue;
-  width: 100px;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-#block1 {
-  background: yellow;
-  width: 200px;
+
+.text {
+  border-radius: 20px;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  color: black;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 50px;
+  border: 5px solid whitesmoke;
+  background: rgba(222,122,122,.3);
+  box-shadow: 5px 5px 5px silver;
+  animation: twitch linear forwards 7s;
 }
-#block2 {
-  background: green;
-  width: 300px;
-}
-#block3 {
-  background: purple;
-  width: 400px;
-}
-#block4 {
-  background: cyan;
-  width: 500px;
-}
-#block5 {
-  background:maroon;
-  width: 600px;
-}
-#block6 {
-  background: red;
-  width: 700px;
-}
-#block7 {
-  background: gray;
-  width: 800px;
-}
-#block8 {
-  background: lavender;
-  width: 900px;
-}
-#block9 {
-  background: orange;
-  width: 1000px;
+
+@keyframes twitch{
+  0% {
+    transform: rotateZ(-10deg) scale(.1);
+  }
+
+  100% {
+    transform: rotateZ(26deg) scale(1.1);
+  }
 }
