@@ -3,7 +3,10 @@ body{
 }
 .text-div {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 72px;
+  font-size: 90px;
+  position: absolute;
+  left: 555px;
+  animation: fall 3s ease-in forwards;
 }
 
 .JS {
@@ -14,7 +17,7 @@ body{
   background: white;
   border-radius: 50%;
   position: absolute;
-  animation: cloud infinite alternate 5s linear;
+  animation: cloud infinite alternate 4s linear;
   z-index: 5;
 }
 
@@ -25,9 +28,9 @@ body{
   width: 250px;
 }
 #circle2 {
-  top: 475px;
-  height: 300px;
-  width: 300px;
+  top: 480px;
+  height: 285px;
+  width: 285px;
   left: 650px;
 }
 
@@ -40,6 +43,12 @@ body{
 
 @keyframes cloud {
   100% {
-    transform: translateY(35px);
+    transform: translateY(25px);
+  }
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(410px);
   }
 }
