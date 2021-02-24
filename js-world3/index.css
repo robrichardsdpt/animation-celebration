@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(60, 156, 251);
+}
+.text-div {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 72px;
+}
+
+.JS {
+  color: gold;
+}
+
+.circle {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: cloud infinite alternate 5s linear;
+  z-index: 5;
+}
+
+#circle1 {
+  top: 500px;
+  left: 500px;
+  height:250px;
+  width: 250px;
+}
+#circle2 {
+  top: 475px;
+  height: 300px;
+  width: 300px;
+  left: 650px;
+}
+
+#circle3 {
+  top: 500px;
+  left: 850px;
+  height:250px;
+  width: 250px;
+}
+
+@keyframes cloud {
+  100% {
+    transform: translateY(35px);
+  }
+}
