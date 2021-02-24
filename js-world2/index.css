@@ -43,9 +43,12 @@ background: black;
     transform: translate(350px);
   }
   65% {
-    transform: translate(250px);
+    transform: translate(550px);
   }
-  75% {
+  70% {
+    transform: translate(400px);
+  }
+  85% {
     transform: translate(700px);
   }
   100% {
