@@ -26,7 +26,14 @@ function runSpeechRecognition() {
           const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'black', 'yellow']
           for(item of colors) {
             if (transcript.includes(item)) document.body.style.background = item
-            document.body.style.color = white
+            const speechContainer = document.querySelector('.speech-container')
+            const outputText = document.getElementById('output')
+            if (item === 'black') {
+              speechContainer.style.color = 'white'
+              outputText.style.color = 'black'
+            } else
+              speechContainer.style.color = 'black'
+              outputText.style.color = 'black'
           } 
       };
     
