@@ -23,6 +23,11 @@ function runSpeechRecognition() {
           var confidence = event.results[0][0].confidence;
           output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
           output.classList.remove("hide");
+          const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'black', 'yellow']
+          for(item of colors) {
+            if (transcript.includes(item)) document.body.style.background = item
+            document.body.style.color = white
+          } 
       };
     
        // start recognition
