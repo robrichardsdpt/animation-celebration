@@ -1,54 +1,24 @@
-body{
-  background-color: rgb(60, 156, 251);
+body {
+  font-family: arial;
 }
-.text-div {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 90px;
-  position: absolute;
-  left: 555px;
-  animation: fall 3s ease-in forwards;
+button {
+  padding:10px;
+  background-color:#6a67ce;
+  color: #FFFFFF;
+  border: 0px;
+  cursor:pointer;
+  border-radius: 5px;
 }
-
-.JS {
-  color: gold;
+#output {
+  background-color:#F9F9F9;
+  padding:10px;
+  width: 100%;
+  margin-top:20px;
+  line-height:30px;
 }
-
-.circle {
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  animation: cloud infinite alternate 4s linear;
-  z-index: 5;
+.hide {
+  display:none;
 }
-
-#circle1 {
-  top: 500px;
-  left: 500px;
-  height:250px;
-  width: 250px;
-}
-#circle2 {
-  top: 480px;
-  height: 285px;
-  width: 285px;
-  left: 650px;
-}
-
-#circle3 {
-  top: 500px;
-  left: 850px;
-  height:250px;
-  width: 250px;
-}
-
-@keyframes cloud {
-  100% {
-    transform: translateY(25px);
-  }
-}
-
-@keyframes fall {
-  100% {
-    transform: translateY(410px);
-  }
+.show {
+  display:block;
 }
