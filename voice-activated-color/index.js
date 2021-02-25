@@ -24,11 +24,12 @@ function runSpeechRecognition() {
           output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
           output.classList.remove("hide");
           const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'black', 'yellow']
+          const lowerCaseTranscript = transcript.split(' ').map(word => { return word.toLowerCase() })
           for(item of colors) {
-            if (transcript.includes(item)) document.body.style.background = item
+            if (lowerCaseTranscript.includes(item)) document.body.style.background = item
             const speechContainer = document.querySelector('.speech-container')
             const outputText = document.getElementById('output')
-            if (item === 'black') {
+            if (item === 'black' || item === 'blue') {
               speechContainer.style.color = 'white'
               outputText.style.color = 'black'
             } else
