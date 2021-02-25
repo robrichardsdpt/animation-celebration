@@ -3,14 +3,26 @@ body {
 }
 button {
   padding:10px;
-  background-color:#6a67ce;
+  background-color:steelblue;
   color: #FFFFFF;
   border: 0px;
   cursor:pointer;
   border-radius: 5px;
 }
+button:hover {
+  background-color:whitesmoke;
+  color: steelblue;
+  border: 1px solid steelblue;
+}
+.speech-container {
+  padding: 25px;
+  border-radius: 15px;
+  border: gray solid 3px;
+  width: 500px;
+  margin: 250px auto;
+}
 #output {
-  background-color:#F9F9F9;
+  background-color:whitesmoke;
   padding:10px;
   width: 100%;
   margin-top:20px;
