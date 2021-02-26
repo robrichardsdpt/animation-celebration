@@ -23,7 +23,7 @@ function runSpeechRecognition() {
           var confidence = event.results[0][0].confidence;
           output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
           output.classList.remove("hide");
-          const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'black', 'yellow', 'brown']
+          const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'pink', 'cyan', 'maroon', 'gold', 'teal', 'silver', 'chartreuse', 'black', 'yellow', 'brown']
           const lowerCaseTranscript = transcript.split(' ').map(word => { return word.toLowerCase() })
           for(item of colors) {
             if (lowerCaseTranscript.includes(item)) document.body.style.background = item
@@ -31,7 +31,7 @@ function runSpeechRecognition() {
             const outputText = document.getElementById('output')
             if (item === 'black' || item === 'blue') {
               speechContainer.style.color = 'white'
-              outputText.style.color = 'black'
+              outputText.style.color = 'red'
             } else
               speechContainer.style.color = 'black'
               outputText.style.color = 'black'
