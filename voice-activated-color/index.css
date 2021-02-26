@@ -41,6 +41,9 @@ button:hover {
 .goodbye {
   animation: goodbye 5s linear forwards;
 }
+.spin {
+  animation: spin 5s linear alternate;
+}
 
 @keyframes dance {
   25% {
@@ -60,5 +63,11 @@ button:hover {
 @keyframes goodbye {
   100% {
     transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
   }
 }
