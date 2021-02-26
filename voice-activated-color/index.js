@@ -33,7 +33,8 @@ function runSpeechRecognition() {
           if(lowerCaseTranscript.includes('goodbye')) speechContainer.classList.add('goodbye')
           if(lowerCaseTranscript.includes('spin')) speechContainer.classList.add('spin')
       };
-    
+      document.querySelector('.speech-container').classList.remove('dance')
+      document.querySelector('.speech-container').classList.remove('spin')
        // start recognition
        recognition.start();
 }
