@@ -38,6 +38,9 @@ button:hover {
 .dance {
   animation: dance 3s 4 linear alternate;
 }
+.goodbye {
+  animation: goodbye 5s linear forwards;
+}
 
 @keyframes dance {
   25% {
@@ -51,5 +54,11 @@ button:hover {
   }
   100% {
     transform: scale(.9) rotateZ(-15deg);
+  }
+}
+
+@keyframes goodbye {
+  100% {
+    transform: scale(0);
   }
 }

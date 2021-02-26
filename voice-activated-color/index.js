@@ -37,6 +37,7 @@ function runSpeechRecognition() {
               outputText.style.color = 'black'
           }
           if(lowerCaseTranscript.includes('dance')) document.querySelector('.speech-container').classList.add('dance') 
+          if(lowerCaseTranscript.includes('goodbye')) document.querySelector('.speech-container').classList.add('goodbye')
       };
     
        // start recognition
