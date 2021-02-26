@@ -35,7 +35,8 @@ function runSpeechRecognition() {
             } else
               speechContainer.style.color = 'black'
               outputText.style.color = 'black'
-          } 
+          }
+          if(lowerCaseTranscript.includes('dance')) document.querySelector('.speech-container').classList.add('dance') 
       };
     
        // start recognition
