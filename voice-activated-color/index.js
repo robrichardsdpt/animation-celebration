@@ -30,6 +30,9 @@ function runSpeechRecognition() {
             'mountain': './bluewinter.jpg',
             'sunrise': './sunrisepemi.jpg'
           }
+          const video = {
+            'run' : './Untitled2.mp4'
+          }
           const lowerCaseTranscript = transcript.split(' ').map(word => { return word.toLowerCase() })
           const speechContainer = document.querySelector('.speech-container')
           for(item of colors) {
@@ -44,6 +47,15 @@ function runSpeechRecognition() {
               img.alt = `${word}`
               document.querySelector('body').appendChild(img)
               output.innerHTML = `Added your ${word} image.`
+            }
+            if (video[word]){
+              console.log(word, video[word])
+              let embed = document.createElement('embed')
+              embed.src = video[word]
+              embed.classList.add('video-card')
+              embed.type = "video/mp4"
+              document.querySelector('body').appendChild(embed)
+              output.innerHTML = `Added your ${word} video.`
             }
           }
           if(lowerCaseTranscript.includes('dance')) speechContainer.classList.add('dance')

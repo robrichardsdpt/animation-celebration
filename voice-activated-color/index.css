@@ -49,6 +49,10 @@ button:hover {
   margin: auto;
   animation: zoom 3s 1 ease-in forwards;
 }
+.video-card {
+  width: 1000px;
+  height: 500px;
+}
 
 @keyframes zoom {
   0% {
