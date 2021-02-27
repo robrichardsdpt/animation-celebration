@@ -52,10 +52,13 @@ button:hover {
 
 @keyframes zoom {
   0% {
-    transform: rotateX(90deg);
+    transform: rotateX(90deg) scale(0);
   }
   25% {
     transform: rotateY(90deg);
+  }
+  75% {
+    transform: scale(1);
   }
 }
 
