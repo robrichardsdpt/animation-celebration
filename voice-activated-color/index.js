@@ -24,15 +24,32 @@ function runSpeechRecognition() {
           output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%"
           output.classList.remove("hide")
           const colors = ['red', 'green', 'blue', 'purple', 'orange', 'gray', 'pink', 'cyan', 'maroon', 'gold', 'teal', 'silver', 'chartreuse', 'black', 'yellow', 'brown']
+          const actions = {
+            'spartan': './142020702.jpg',
+            'hockey': './IMG_3532.JPG',
+            'mountain': './bluewinter.jpg',
+            'sunrise': './sunrisepemi.jpg'
+          }
           const lowerCaseTranscript = transcript.split(' ').map(word => { return word.toLowerCase() })
           const speechContainer = document.querySelector('.speech-container')
           for(item of colors) {
             if (lowerCaseTranscript.includes(item)) document.body.style.background = item
           }
+          for(word of lowerCaseTranscript) {
+            if (actions[word]){
+              console.log(word, actions[word])
+              let img = document.createElement('img')
+              img.src = actions[word]
+              img.classList.add('image-card')
+              img.alt = `${word}`
+              document.querySelector('body').appendChild(img)
+              output.innerHTML = `Added your ${word} image.`
+            }
+          }
           if(lowerCaseTranscript.includes('dance')) speechContainer.classList.add('dance')
           if(lowerCaseTranscript.includes('goodbye')) speechContainer.classList.add('goodbye')
           if(lowerCaseTranscript.includes('spin')) speechContainer.classList.add('spin')
-      };
+      }
       document.querySelector('.speech-container').classList.remove('dance')
       document.querySelector('.speech-container').classList.remove('spin')
        // start recognition

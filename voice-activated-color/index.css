@@ -44,6 +44,10 @@ button:hover {
 .spin {
   animation: spin 5s linear alternate;
 }
+.image-card{
+  width: 25%;
+  margin: auto;
+}
 
 @keyframes dance {
   25% {
