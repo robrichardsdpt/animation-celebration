@@ -5,7 +5,6 @@ body{
   background: white;
   border-radius: 50%;
   position: absolute;
-  animation: cloud infinite alternate 4s linear;
   z-index: 5;
 }
 
@@ -14,27 +13,30 @@ body{
   left: 500px;
   height:250px;
   width: 250px;
+  animation: cloud infinite alternate 3s;
   background-color: blanchedalmond;
 }
 #circle2 {
   top: 500px;
   height: 250px;
   width: 250px;
-  left: 650px;
+  left: 750px;
+  animation: cloud infinite 3s alternate 1s;
   background-color: burlywood;
 }
 
 #circle3 {
   top: 500px;
-  left: 850px;
+  left: 1000px;
   height:250px;
   width: 250px;
+  animation: cloud infinite 3s alternate 2s;
   background-color: darkgoldenrod;
 }
 
 @keyframes cloud {
   100% {
-    transform: translateY(25px);
+    transform: translateY(500px);
   }
 }
 
