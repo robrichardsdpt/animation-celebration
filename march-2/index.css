@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(60, 156, 251);
+}
+.circle {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: cloud infinite alternate 4s linear;
+  z-index: 5;
+}
+
+#circle1 {
+  top: 500px;
+  left: 500px;
+  height:250px;
+  width: 250px;
+  background-color: blanchedalmond;
+}
+#circle2 {
+  top: 500px;
+  height: 250px;
+  width: 250px;
+  left: 650px;
+  background-color: burlywood;
+}
+
+#circle3 {
+  top: 500px;
+  left: 850px;
+  height:250px;
+  width: 250px;
+  background-color: darkgoldenrod;
+}
+
+@keyframes cloud {
+  100% {
+    transform: translateY(25px);
+  }
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(410px);
+  }
+}

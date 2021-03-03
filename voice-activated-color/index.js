@@ -31,7 +31,7 @@ function runSpeechRecognition() {
             'sunrise': './sunrisepemi.jpg'
           }
           const video = {
-            'run' : './Untitled2.mp4'
+            'run' : ''
           }
           const lowerCaseTranscript = transcript.split(' ').map(word => { return word.toLowerCase() })
           const speechContainer = document.querySelector('.speech-container')
@@ -40,7 +40,6 @@ function runSpeechRecognition() {
           }
           for(word of lowerCaseTranscript) {
             if (actions[word]){
-              console.log(word, actions[word])
               let img = document.createElement('img')
               img.src = actions[word]
               img.classList.add('image-card')
@@ -49,7 +48,6 @@ function runSpeechRecognition() {
               output.innerHTML = `Added your ${word} image.`
             }
             if (video[word]){
-              console.log(word, video[word])
               let embed = document.createElement('embed')
               embed.src = video[word]
               embed.classList.add('video-card')
