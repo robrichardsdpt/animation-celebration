@@ -1,66 +1,19 @@
-body{
-  background-color: black;
-}
-.container {
-  background: black;
-  height: 100vh;
-  width: 100vw;
-}
-.toggle {
-  background: gray;
-  padding: 20px;
+a {
+  position: relative;
+  display: inline-block;
   font-size: 2em;
-  width: 200px;
-  text-align: center;
-  color: white;
-  border-radius: 15px;
-}
-.toggle:hover {
-  cursor: pointer;
-  background: silver;
-}
-
-.circle {
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
+  font-weight: 800;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
 }
 
-#circle1 {
-  top: 500px;
-  left: 500px;
-  height:250px;
-  width: 250px;
-  animation: cloud infinite alternate 3s;
-  background-color: blanchedalmond;
-}
-#circle2 {
-  top: 500px;
-  height: 250px;
-  width: 250px;
-  left: 750px;
-  animation: cloud infinite 3s alternate 1s;
-  background-color: burlywood;
-}
-
-#circle3 {
-  top: 500px;
-  left: 1000px;
-  height:250px;
-  width: 250px;
-  animation: cloud infinite 3s alternate 2s;
-  background-color: darkgoldenrod;
-}
-
-@keyframes cloud {
-  100% {
-    transform: translateY(500px);
-  }
-}
-
-@keyframes fall {
-  100% {
-    transform: translateY(410px);
-  }
+a:hover {
+  background-position: 0 100%;
 }
